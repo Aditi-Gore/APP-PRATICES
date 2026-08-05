@@ -1,21 +1,14 @@
-# Class Definition
-class Student:
+class Animal:
+    def sound(self):
+        print("Animals make sounds")
 
-    # Constructor
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
 
-    # Method
-    def display(self):
-        print("Student Name:", self.name)
-        print("Student Age:", self.age)
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
 
-# Creating Objects
-obj1 = Student("Aditi", 20)
-obj2 = Student("Rahul", 21)
 
-# Calling Method
-obj1.display()
-print()
-obj2.display()
+d = Dog()
+
+d.sound()   # Inherited from Animal
+d.bark()    # Dog's own method
